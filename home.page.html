@@ -1,0 +1,62 @@
+<ion-header>
+  <ion-toolbar color="warning">
+    <ion-title>
+      Svivy Magazine
+    </ion-title>
+    <ion-list>
+      <ion-item *ngFor="let item of items">
+        <ion-thumbnail slot="start">
+          <ion-img [src]="FF.jpg"></ion-img>
+        </ion-thumbnail>
+        <ion-label>{{item.text}}</ion-label>
+      </ion-item>
+    </ion-list>
+  </ion-toolbar>
+</ion-header>
+<br>
+<div><ion-searchbar></ion-searchbar></div>
+<br>
+<ion-content padding>
+
+  <h1>I Know Why You're Here.</h1>
+  <h2>You're Hungry Aren't Cha??</h2>
+  <ion-card>
+    <ion-card-header>
+      Could This Be A MisSTEAK??
+    </ion-card-header>
+    <ion-card-content>
+      <p>Precedent suggests Dr. Uma Valeti has a difficult road ahead of him. As the co-founder and chief executive of
+        Memphis Meats, a San Francisco-based company in the throes of developing meat grown with cells and
+        bioreactors..........</p>
+    </ion-card-content>
+    <ion-toolbar>
+      <ion-buttons slot="end">
+        <ion-button>Continue</ion-button>
+        <ion-button>NAH I'M GUD HUMMY</ion-button>
+      </ion-buttons>
+    </ion-toolbar>
+  </ion-card>
+  <ion-card>
+    <ion-card-header>
+      <h1>NACHO ORDNINARY SESSION</h1>
+    </ion-card-header>
+    <ion-card-content>
+      <p>COME, LET US REVEL AMONGST THE INDUSTRY'S BIGGEST NAMES AND LEARN MORE ABOUT THE LATEST IN FOODTECH INNOVATION. </p>
+    </ion-card-content>
+    <ion-toolbar>
+      <ion-buttons slot="end">
+        <ion-button (click)="rulezFunction()">Learn More</ion-button>
+        <ion-button>Refuse</ion-button>
+      </ion-buttons>
+    </ion-toolbar>
+  </ion-card>
+
+  <ion-chip>
+    <ion-icon name="md-bluetooth" color="warn"></ion-icon>
+    <ion-label>Audio Read</ion-label>
+  </ion-chip>
+  <ion-chip>
+    <ion-icon name="heart" color="danger"></ion-icon>
+    <ion-label>Like</ion-label>
+  </ion-chip>
+</ion-content>
